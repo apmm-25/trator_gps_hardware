@@ -1,30 +1,182 @@
-(module "VLS6045" (layer F.Cu)
-  (descr "VLS6045")
-  (tags "Inductor")
-  (attr smd)
-  (fp_text reference L** (at 0 0) (layer F.SilkS)
-    (effects (font (size 1.27 1.27) (thickness 0.254)))
-  )
-  (fp_text user %R (at 0 0) (layer F.Fab)
-    (effects (font (size 1.27 1.27) (thickness 0.254)))
-  )
-  (fp_text value "VLS6045" (at 0 0) (layer F.SilkS) hide
-    (effects (font (size 1.27 1.27) (thickness 0.254)))
-  )
-  (fp_line (start -3 -3) (end 3 -3) (layer F.Fab) (width 0.2))
-  (fp_line (start 3 -3) (end 3 3) (layer F.Fab) (width 0.2))
-  (fp_line (start 3 3) (end -3 3) (layer F.Fab) (width 0.2))
-  (fp_line (start -3 3) (end -3 -3) (layer F.Fab) (width 0.2))
-  (fp_line (start -5.05 -4.2) (end 4.2 -4.2) (layer F.CrtYd) (width 0.05))
-  (fp_line (start 4.2 -4.2) (end 4.2 4.2) (layer F.CrtYd) (width 0.05))
-  (fp_line (start 4.2 4.2) (end -5.05 4.2) (layer F.CrtYd) (width 0.05))
-  (fp_line (start -5.05 4.2) (end -5.05 -4.2) (layer F.CrtYd) (width 0.05))
-  (fp_circle (center -3.95 0) (end -3.95 0.05) (layer F.SilkS) (width 0.2))
-  (pad 1 smd rect (at -2.1 0 0) (size 1.9 5.1) (layers F.Cu F.Paste F.Mask))
-  (pad 2 smd rect (at 2.1 0 0) (size 1.9 5.1) (layers F.Cu F.Paste F.Mask))
-  (model VLS6045EX-4R7M.stp
-    (at (xyz 0 0 0.088976377577294))
-    (scale (xyz 1 1 1))
-    (rotate (xyz -90 0 0))
-  )
+(footprint "VLS6045"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "VLS6045")
+	(tags "Inductor")
+	(property "Reference" "L**"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(uuid "5f2e4270-e669-457d-9546-0b0b4ff8f272")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Value" "VLS6045"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "fa239d13-f04f-4b61-aec6-db14b45d13d0")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "daf14c32-2eed-4fcf-85da-fa00f53ad804")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "45f4bd46-72a8-469c-8f88-7f90a094a1fd")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_circle
+		(center -5.5 0)
+		(end -5.5 0.05)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "87f68bcb-7430-4f0b-80c6-46911fa49d1c")
+	)
+	(fp_line
+		(start -5.05 -4.2)
+		(end 4.2 -4.2)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "7119b636-b83e-46ad-93e7-e558f246e52b")
+	)
+	(fp_line
+		(start -5.05 4.2)
+		(end -5.05 -4.2)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "b2a268d0-663d-44e2-860f-2dd3e32b8983")
+	)
+	(fp_line
+		(start 4.2 -4.2)
+		(end 4.2 4.2)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "11f75139-837b-4f6a-962b-24cb3652562f")
+	)
+	(fp_line
+		(start 4.2 4.2)
+		(end -5.05 4.2)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "490ec933-c793-41c2-84c2-c4a6719bc20b")
+	)
+	(fp_line
+		(start -3 -3)
+		(end 3 -3)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "5c076364-c148-4c2e-a152-a42109fb98e5")
+	)
+	(fp_line
+		(start -3 3)
+		(end -3 -3)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "382016f5-5900-4acf-946d-743d840f8e83")
+	)
+	(fp_line
+		(start 3 -3)
+		(end 3 3)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "039b7140-222b-465d-ab18-bd6ae5b1c965")
+	)
+	(fp_line
+		(start 3 3)
+		(end -3 3)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b3e919fa-9ca5-4165-bb58-02c61f48d48c")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "03e377ba-fd56-421b-9f85-73c1cc93e8c3")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -2.825 0.025)
+		(size 3.35 5.05)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "0c161bf2-dec2-43b2-b73c-d251c3a9c79a")
+	)
+	(pad "2" smd rect
+		(at 2.825 0.025)
+		(size 3.35 5.05)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "418706c5-9d49-4d10-8dd6-6a78885ea5b0")
+	)
+	(embedded_fonts no)
+	(model "VLS6045EX-4R7M.stp"
+		(offset
+			(xyz 0 0 2.259999957)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
 )
